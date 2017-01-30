@@ -1,10 +1,9 @@
-#!/usr/bin/perl -w
-
 package Set::Light;
 use Array::RefElem qw/hv_store/;
 use strict;
+require 5.006;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 # shared undef variable
 my $UNDEF = undef;
@@ -134,7 +133,7 @@ Usually you would use a hash to keep track of a list of items like:
 	  }
 
 While this is very fast (both on inserting items, as well as looking them up),
-it wastes quite a lot of memory, since each key in %SEEN need one scalar.
+it wastes quite a lot of memory, since each key in %SEEN needs one scalar.
 
 =head2 Why not use Set::Object or Set::Scalar?
 
@@ -196,7 +195,7 @@ get inserted twice. So:
 	print $set->insert('foo');		# 0
 	print $set->insert('bar','baz','foo');	# 2	(foo already inserted)
 
-=head2 delete()
+=head2 delete()/remove()
 
 	$set->delete( $string );
 	$set->delete( @strings );
@@ -220,7 +219,7 @@ under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-(c) Tels bloodgate.com 2004.
+(c) Tels bloodgate.com 2004 - 2008.
 
 =head1 SEE ALSO
 
