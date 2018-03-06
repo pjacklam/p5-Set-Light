@@ -103,5 +103,3 @@ is ($set->insert( 'a', 'a', 'a', 'a', 'a' ), 1, 'inserted once');
 
 is ($set->size(), 4, '4 elements');
 ok (!$set->is_null(),  'set is not empty');
-
-

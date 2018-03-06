@@ -60,5 +60,3 @@ ok (exists $set->{foo}, 'foo still there');
 is ($set->size(), 28, '28 elements');
 ok (!$set->is_null(),  'set is not empty');
 ok (!$set->is_empty(), 'set is not empty');
-
-

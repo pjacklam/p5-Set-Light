@@ -20,13 +20,13 @@ BEGIN
 #############################################################################
 # creation
 
-sub new 
+sub new
   {
   my $class = shift; my $x = bless { }, $class;
 
   my $opt;
   $opt = shift if ref($_[0]) eq 'HASH';
- 
+
   $x->insert(@_) if @_ != 0;
 
   $x;
@@ -38,7 +38,7 @@ sub new
 sub insert
   {
   my ($x) = shift;
- 
+
   my $inserted = 0;
   for (@_)
     {

@@ -2,7 +2,7 @@
 
 use Test::More;
 use strict;
-   
+
 my $tests;
 
 BEGIN
@@ -23,4 +23,3 @@ SKIP:
       };
   pod_file_ok( '../lib/Set/Light.pm' );
   }
-
