@@ -1,5 +1,7 @@
 0.05 Not Released
 
+ * Add test file t/release-test-version.t.
+
  * Use the default MANIFEST.SKIP file.
 
  * Add test file t/release-portability.t.
